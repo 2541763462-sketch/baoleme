@@ -1,0 +1,25 @@
+{
+  "name": "baoleme-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "饱了么 BaoLeMe 网站版：模拟外卖 + 永远配送中",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:offline": "npm run build && node scripts/build-offline.mjs",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.24.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^6.0.3",
+    "vite": "^5.0.12",
+    "vue-tsc": "^3.3.6"
+  }
+}
